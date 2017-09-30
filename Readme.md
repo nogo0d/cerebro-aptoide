@@ -10,7 +10,7 @@ Uses the [Aptoide Search API](http://ws75.aptoide.com/api/7/apps/search?info=1) 
 
 In Cerebro, type `aptoide <query>` to search the `query` globally in Aptoide, or `aptoide <query>@<store>` to search the `query` in Aptoide `store`.
 
-Navigate through the list and select download to direcctly get the App's APK file, or select directly the App item in the main list to go to aptoide website App's page.
+Navigate through the list and select download to directly get the App's APK file, or select directly the App item in the main list to go to aptoide website App's page.
 
 ## Related
 
@@ -19,8 +19,4 @@ Navigate through the list and select download to direcctly get the App's APK fil
 
 ## License
 
-MIT ©
-
-## Author
-
-nogo0d
+MIT © nogo0d
