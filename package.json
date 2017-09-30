@@ -1,0 +1,32 @@
+{
+  "name": "cerebro-aptoide",
+  "version": "1.0.0",
+  "description": "Aptoide's cerebro plugin to search android apps.",
+  "licennce": "MIT",
+	"repository" : "nogo0d/cerebro-aptoide",
+	"author": {
+		"name": "nogo0d",
+		"email": "jasmo.dev@gmail.com"
+	},
+  "dependencies": {
+    "axios": "^0.16.2",
+    "react": "^15.6.1"
+  },
+  "devDependencies": {
+    "cerebro-scripts": "0.0.19"
+  },
+  "main": "dist/index.js",
+  "keywords": [
+		"aptoide",
+		"android",
+		"apk",
+		"nogo0d",
+    "cerebro",
+    "cerebro-plugin"
+  ],
+  "scripts": {
+    "start": "cerebro-scripts start",
+    "build": "cerebro-scripts build",
+    "test": "cerebro-scripts test"
+  }
+}

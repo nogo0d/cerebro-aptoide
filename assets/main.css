@@ -1,0 +1,108 @@
+.searchHolder {}
+
+h1 {
+	max-width: 400px;
+	text-transform: none;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 0px!important;
+}
+
+.searchHolder table {
+	padding:0; margin:0;
+}
+.searchHolder table tr {
+	padding:0; margin:0;
+}
+.searchHolder table tr td {
+	padding:0; margin:0;
+}
+
+.searchHolder h1 {
+	margin-bottom: 10px;
+}
+
+.searchHolder h1 span {
+	font-weight: 600;
+}
+
+.searchHolder .app {
+	border-radius: 5px;
+	border: solid 1px #dddddd;
+	padding: 5px;
+	margin-bottom: 5px;
+	height:52px;
+}
+
+.searchHolder .app:last-child {
+	margin-bottom: 0px;
+}
+
+.searchHolder .app:focus {
+	border: solid 2px #ff681f;
+	outline: none;
+	padding: 4px;
+	background-color: #f4f4f4;
+}
+
+.searchHolder .app img {
+	border-radius: 5px;
+	width: 40px;
+	height: 40px;
+}
+
+.searchHolder .app .appInfo {
+	margin-left: 5px;
+	margin-top: 0px;
+	vertical-align: top;
+}
+
+.searchHolder .app .appInfo .statistics {
+	font-size: 10px;
+	line-height: 12px;
+	max-width: 216px;
+	max-height: 26px;
+	overflow: hidden;
+	color: #777;
+}
+
+.searchHolder .app .appInfo .statistics span {
+	font-weight: 600;
+}
+
+.searchHolder .app .appInfo h2 {
+	max-width: 300px;
+	font-size: 12px;
+	text-transform: none;
+	padding: 0px;
+	margin: 0px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+
+.searchHolder .emptyListMessage {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.download {
+	background-color: #01d300;
+	font-size: 11px;
+	border-radius: 4px;
+	width: 90px;
+	text-align: center;
+	padding: 3px;
+	position: absolute;
+	margin-top: -29px;
+	right: 16px;
+	color: white;
+}
+
+.download:focus {
+	border: solid 2px #686868;
+	outline: none;
+	padding: 1px;
+	color: #3a3a3a;
+}
