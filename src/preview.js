@@ -151,14 +151,14 @@ class Preview extends React.Component {
 												<img src={app.icon} />
 											</td>
 											<td>
-												<div  className={style.appInfo}>
+												<div className={style.appInfo}>
 													<h2>{app.name}</h2>
 													<div className={style.statistics}>
 														<p>
 															<span>Downloads: </span> {app.stats.pdownloads}
 														</p>
 														<p>
-															<span>Rating: </span> {app.stats.prating.avg} | <span>Users Rated: </span> {app.stats.prating.total}
+															<span>Version: </span> {app.file.vername} | <span>Rating: </span> {app.stats.prating.avg} / {app.stats.prating.total}
 														</p>
 													</div>
 												</div>
