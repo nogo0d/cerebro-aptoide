@@ -1,12 +1,22 @@
-.searchHolder {}
+.searchHolder {
+	font-family: Impact, Charcoal, sans-serif
+}
 
-h1 {
+.searchHolder h1 {
 	max-width: 400px;
 	text-transform: none;
 	white-space:nowrap;
 	overflow:hidden;
 	text-overflow: ellipsis;
-	margin-bottom: 0px!important;
+	mix-blend-mode: difference;
+	color: white;
+	margin:0px!important;
+	padding:0px!important;
+	font-size:14px!important;
+}
+
+.searchHolder h1 span {
+	font-weight: 600;
 }
 
 .searchHolder table {
@@ -19,20 +29,13 @@ h1 {
 	padding:0; margin:0;
 }
 
-.searchHolder h1 {
-	margin-bottom: 10px;
-}
-
-.searchHolder h1 span {
-	font-weight: 600;
-}
-
 .searchHolder .app {
 	border-radius: 5px;
 	border: solid 1px #dddddd;
 	padding: 5px;
 	margin-bottom: 5px;
 	height:52px;
+	background-color: white;
 }
 
 .searchHolder .app:last-child {
@@ -46,6 +49,11 @@ h1 {
 	background-color: #f4f4f4;
 }
 
+.searchHolder .app h2 {
+	margin: 0px;
+	padding: 0px;
+}
+
 .searchHolder .app img {
 	border-radius: 5px;
 	width: 40px;
@@ -56,6 +64,15 @@ h1 {
 	margin-left: 5px;
 	margin-top: 0px;
 	vertical-align: top;
+}
+
+.searchHolder .app .appInfo .statistics {
+	font-size: 10px;
+	line-height: 12px;
+	max-width: 216px;
+	max-height: 26px;
+	overflow: hidden;
+	color: #777;
 }
 
 .searchHolder .app .appInfo .statistics {
@@ -82,6 +99,11 @@ h1 {
 	text-overflow: ellipsis;
 }
 
+.searchHolder .app .appInfo p {
+	padding: 0px;
+	margin: 0px;
+}
+
 .searchHolder .emptyListMessage {
 	text-align: center;
 	margin-top: 30px;
@@ -98,6 +120,7 @@ h1 {
 	margin-top: -29px;
 	right: 16px;
 	color: white;
+	font-weight: 600;
 }
 
 .download:focus {
