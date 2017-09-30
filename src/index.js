@@ -7,7 +7,7 @@ const Preview = require('./preview');
 
 const aptoidePlugin = ({ term, actions, display }) => {
 
-	let title = `Search Aptoide for '${term}'`;
+
 
 	let goSearch = (searchTerm) => {
 		const q = encodeURIComponent(searchTerm);
@@ -32,6 +32,8 @@ const aptoidePlugin = ({ term, actions, display }) => {
 				term = almost_match_store[1];
 			}
 		}
+
+		let title = `Search Aptoide for '${term}'`;
 
 		display({
 			icon,
