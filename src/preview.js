@@ -89,7 +89,7 @@ class Preview extends React.Component {
 		}
 	}
 
-	getListTitle() {
+	getRenderedListTitle() {
 		if(this.props.store !== null) {
 			return <h1>Results for <span>{this.props.query}</span> in store <span>{this.props.store}</span>:</h1>
 		}
@@ -116,21 +116,21 @@ class Preview extends React.Component {
 
 	renderEmptyList() {
 		return 	<div className={style.searchHolder} style={{ alignSelf: 'flex-start', width: '100%' }}>
-					{this.getListTitle()}
+					{this.getRenderedListTitle()}
 					<div className={style.emptyListMessage}>No Results were found.</div>
 				</div>
 	}
 
 	renderGenericError() {
 		return 	<div className={style.searchHolder} style={{ alignSelf: 'flex-start', width: '100%' }}>
-					{this.getListTitle()}
+					{this.getRenderedListTitle()}
 					<div className={style.emptyListMessage}>Ooops... Something went wrong...</div>
 				</div>
 	}
 
 	renderListResults() {
 		return 	<div className={style.searchHolder} style={{ alignSelf: 'flex-start', width: '100%' }}>
-					{this.getListTitle()}
+					{this.getRenderedListTitle()}
 					{
 						this.state.datalist.list.map(
 							(app, idx) => (
@@ -185,8 +185,11 @@ class Preview extends React.Component {
 
 	static renderWaitingForInput() {
 		return 	<div className={style.searchHolder} style={{ alignSelf: 'flex-start', width: '100%' }}>
-			<div className={style.emptyListMessage}>Start searching for Aptoide Apps.</div>
-		</div>
+					<div className={style.emptyListMessage}>
+						<p>Start searching for android apps in Aptoide.</p>
+						<p>The query must have at least 2 characters long.</p>
+					</div>
+				</div>
 	}
 }
 
