@@ -42,9 +42,17 @@ class Preview extends React.Component {
 	};
 
 	doSearch() {
-		axios.get(this.props.search_url,  {'timeout': 1000})
-			.then(response => this.setState(response.data))
-			.catch(error => {})
+		if (this.props.query.length >= 2) {
+			axios.get(this.props.search_url,  {'timeout': 1000})
+				.then(response => this.setState(response.data))
+				.catch(() => {
+					this.setState({
+						'info' : {
+							'status' : 'ERROR'
+						}
+					})
+				})
+		}
 	}
 
 	limitAppList() {
@@ -106,7 +114,7 @@ class Preview extends React.Component {
 			} else if (this.state.info.status !== null && this.state.info.status === 'OK' && this.state.datalist.list !== null && this.state.datalist.list.length === 0) {
 				this.props.already_fetched = false;
 				return 	this.renderEmptyList();
-			} else if ((this.state.info === null || this.state.info.status !== null && this.state.info.status !== 'OK') && !this.props.already_fetched) {
+			} else if ((this.state.info.status !== null && this.state.info.status !== 'OK') && !this.props.already_fetched) {
 				this.props.already_fetched = false;
 				return this.renderGenericError()
 			}

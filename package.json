@@ -1,6 +1,6 @@
 {
   "name": "cerebro-aptoide",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Aptoide's cerebro plugin to search android apps.",
   "licennce": "MIT",
 	"repository" : "nogo0d/cerebro-aptoide",
